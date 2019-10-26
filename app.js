@@ -55,6 +55,9 @@ function day1PM() {
     age = 19;
     print(canIGoToTheCasino(age, "IA"));
     print(canIGoToTheCasino(age, "MN"));
+
+    print(whatShouldIWear(90));
+    print(whatShouldIWear(60));
 }
 
 day1AM();
@@ -76,4 +79,16 @@ function bmiConverter(weight, height) {
 
 function canIGoToTheCasino(age, location) {
     return age >= 21 && location == "IA" || age >= 18 && location == "MN";
+}
+
+function whatShouldIWear(temp) {
+    if(temp >= 75) {
+        return "swim wear";
+    } else if (temp >= 45) {
+        return "Light jacket";
+    } else if(temp >= 10) {
+        return "Winter jacket";
+    } else {
+        return 'Don\'t go outside';
+    }
 }

@@ -14,11 +14,11 @@ function draw() {
     strokeWeight(3);
     line(0, 40, 640, 40);
 }
-
+var age = 38;
 function day1AM() {
     // console.log("Hello World");
     var fullName = "Marc Hauschildt";
-    var age = 38;
+    
     var weight = 192.5;
     var heightInInches = 68;
     var address = "123 Main St.";
@@ -45,13 +45,20 @@ function day1AM() {
     var feet = Math.floor(heightInInches / 12);
     var inches = heightInInches % 12;
     console.log(fullName + " is " + feet + " foot " + inches +" inches tall");
+}
 
+function day1PM() {
     print("Hello World");
     var convertedTemp = f2c(32);
     print(convertedTemp);
+    print(canIGoToTheCasino(age, "IA"));
+    age = 19;
+    print(canIGoToTheCasino(age, "IA"));
+    print(canIGoToTheCasino(age, "MN"));
 }
 
-day1AM();  
+day1AM();
+day1PM();
 
 function print(input) {
     console.log(input);
@@ -61,4 +68,12 @@ function print(input) {
 // Input: temperature in fahrenheit
 function f2c(t) {
     return((t - 32) * 5 / 9);
+}
+
+function bmiConverter(weight, height) {
+    return 0;
+}
+
+function canIGoToTheCasino(age, location) {
+    return age >= 21 && location == "IA" || age >= 18 && location == "MN";
 }

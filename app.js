@@ -13,5 +13,21 @@ function draw() {
     stroke(0,0,255);
     strokeWeight(3);
     line(0, 40, 640, 40);
-    
 }
+
+function day1AM() {
+    console.log("Hello World");
+    var fullName = "Marc Hauschildt";
+    var age = 38;
+    var weight = 192.5;
+    var heightInInches = 75;
+    var address = "123 Main St.";
+    var middleName;
+    console.log(middleName);
+    console.log(typeof(weight));
+    var likesPizza = true;
+    var hasTattoos = false;
+    console.log(typeof(likesPizza));
+}
+
+day1AM();

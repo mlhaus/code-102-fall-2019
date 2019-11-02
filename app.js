@@ -60,8 +60,8 @@ function day1PM() {
     print(whatShouldIWear(60));
 }
 
-day1AM();
-day1PM();
+// day1AM();
+// day1PM();
 
 function print(input) {
     console.log(input);
@@ -92,3 +92,33 @@ function whatShouldIWear(temp) {
         return 'Don\'t go outside';
     }
 }
+
+
+function day2AM() {
+    console.log(1);
+    print(2);
+    print(3);
+
+    var count = 10;
+    while(count >= 0) {
+        print(count);
+        count--;
+    }
+
+
+    var sum = 0;
+    var count = 0;
+    while(true) {
+        var input = parseInt(prompt('Enter a number. Type 0 to end. '));
+        if(input === 0) {
+            break;
+        } else {
+            sum += input;
+            count++;
+        }
+    }
+    console.log('The average of your numbers is ' + sum/count);
+
+}
+
+day2AM();
